@@ -13,6 +13,10 @@ export default defineConfig(({ command }) => {
         "@": path.resolve(__dirname, "./src"),
       },
     },
+    build: {
+      outDir: 'dist',
+      assetsDir: 'assets',
+    },
   };
 
   // Solo agregar el proxy en desarrollo
